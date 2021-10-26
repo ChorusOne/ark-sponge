@@ -19,10 +19,11 @@ incremental = true
 panic = 'abort'
 
 [dependencies]
-ark-ec = { version = "^0.3.0", default_features = false }
-ark-ff = { version = "^0.3.0", default_features = false }
-ark-serialize = { version = "^0.3.0", default_features = false}
-ark-std = { version = "^0.3.0", default-features = false }
+ark-std = { git = "https://github.com/ChorusOne/ark-std", branch = "giulio/random_feature", default-features = false }
+ark-ec = {git = "https://github.com/ChorusOne/ark-algebra", branch = "giulio/random", default-features = false }
+ark-ff = { git = "https://github.com/ChorusOne/ark-algebra", branch = "giulio/random", default-features = false }
+ark-serialize = {git = "https://github.com/ChorusOne/ark-algebra", branch = "giulio/random", default-features = false}
+
 derivative = { version = "2.1.1", features = [ "use_core" ] }
 digest = { version = "0.9.0", default_features = false }
 rand_chacha = { version = "0.3.0", default-features = false }
